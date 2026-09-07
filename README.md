@@ -8,7 +8,8 @@ both.
 
 
 Link: https://semgsignalprocessing-and-visualisation-gwcxcmhdhlrrf6cyeayfzs.streamlit.app/
-Note: DEMO VIDEO AVAILABLE 
+
+Note: Demo video also available
 
 
 
