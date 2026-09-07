@@ -15,16 +15,16 @@ Note: Demo video also available
 
 ## Why I did this project
 
-I started from a reference document along with the dataset  that laid out an sEMG processing
+I started from a reference document available along with the dataset  that laid out an sEMG processing
 workflow tested on a 10-subject dataset. I wanted to implement that same kind of
 processing pipeline myself, on real recordings, and understand. My first working version of the
 envelope-smoothing step had a bug where the smoothing window was
 calculated in units of the original 2000 Hz sample rate, but applied to
-an envelope I had already downsampled to about 300 points, a window
+an envelope I had already downsampled to about 300 points, hence window
 bigger than the entire array. It didn't throw an  error but just
 implemented a much cruder smoothing method. For the isometric recording
-I ran diagnostics on my own signal and found the a pattern
-the first 20s was the *quietest* part, not the noisiest of the signal.
+I ran diagnostics on my own signal and found  a pattern
+with the  first 20s being the *quietest* part, not the noisiest of the signal so full time window was used for it.
 
 After getting the isometric pipeline working, I processed the isotonic
 recording from the same subject to see whether my processing decisions
