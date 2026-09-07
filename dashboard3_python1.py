@@ -19,7 +19,7 @@ import plotly.graph_objects as go
 from scipy import signal
 
 
-# ==========================================
+
 # PAGE CONFIGURATION
 # ==========================================
 st.set_page_config(page_title="EMG Signal Processing Dashboard", layout="wide")
@@ -27,16 +27,16 @@ st.set_page_config(page_title="EMG Signal Processing Dashboard", layout="wide")
 st.title("EMG Signal Processing Dashboard")
 st.subheader("Interactive visualization of processed sEMG data")
 
-# ==========================================
+
 # DATA LOADING (CACHED, PER CONDITION)
 # ==========================================
 # Isometric files: filtered_emg3_signal.csv, emg3_envelope_raw.csv,
 #                   emg3_envelope_smoothed.csv, sampling_info3.csv
-#                   -> full 0-60s (no instability found in diagnostics)
-# Isotonic files:  same names + "_isotonica" suffix
-#                   -> trimmed 20-60s (diagnostics showed a genuine
+#                   full 0-60s (no instability found in diagnostics)
+# Isotonic files:  same names but "_isotonica" suffix
+#                   trimmed 20-60s (diagnostics showed a genuine
 #                      startup transient in the first 20s for this
-#                      condition -- see README for the evidence)
+#                      condition  see README for the evidence)
 
 @st.cache_data
 def load_condition_data(condition):
@@ -60,7 +60,7 @@ def load_condition_data(condition):
 
     return filtered, env_raw, env_smooth, fs
 
-# ==========================================
+
 # SIDEBAR CONTROLS
 # ==========================================
 st.sidebar.header("Controls")
@@ -108,7 +108,7 @@ else:
         "instability in the first 20s."
     )
 
-# ==========================================
+
 # HELPER FUNCTIONS FOR METRICS
 # ==========================================
 def calculate_metrics(y, fs):
@@ -128,7 +128,7 @@ def calculate_metrics(y, fs):
 
     return rms, mdf, spectral_entropy, skewness, kurtosis
 
-# ==========================================
+
 # MAIN DASHBOARD
 # ==========================================
 # 1. FILTERED SIGNAL PLOT
