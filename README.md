@@ -200,21 +200,15 @@ instead of the current RMS-ratio approach.
 
 ```
 ├── README.md
-├── emg\\\_signal\\\_processing3\\\_final.mlx     # MATLAB processing pipeline
-├── dashboard3\\\_python.py                 # Streamlit dashboard (both conditions)
-├── python\\\_dashboard3\\\_data/
-│   ├── filtered\\\_emg3\\\_signal.csv               # Isometric, full 0-60s
-│   ├── emg3\\\_envelope\\\_raw.csv
-│   ├── emg3\\\_envelope\\\_smoothed.csv
-│   ├── sampling\\\_info3.csv
-│   ├── filtered\\\_emg3\\\_signal\\\_isotonica.csv     # Isotonic, trimmed 20-60s
-│   ├── emg3\\\_envelope\\\_raw\\\_isotonica.csv
-│   ├── emg3\\\_envelope\\\_smoothed\\\_isotonica.csv
-│   └── sampling\\\_info3\\\_isotonica.csv
+├── LICENSE
 ├── requirements.txt
-├── figures                               # static plots (filter stages, diagnostics)
-└── demo/
-    └── dashboard\\\_demo.mp4                # walkthrough video
+├── dashboard3_python1.py          # Streamlit dashboard (both conditions)
+├── emg_signal_processing3_final.m # MATLAB processing pipeline
+├── Data_set_EMG_Repository/       # Dataset (Raw, filtered, etc.)
+├── Demo/
+│   └── demo_dashboard.mp4         # Walkthrough video
+├── Figures/                       # Static plots (filter stages, diagnostics)
+└── python_dashboard3_data/        # Processed data files (isometric, isotonic)              
 ```
 
 ## How to run it
