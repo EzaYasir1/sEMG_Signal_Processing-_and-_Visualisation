@@ -9,7 +9,7 @@ both.
 
 Link: https://semgsignalprocessing-and-visualisation-gwcxcmhdhlrrf6cyeayfzs.streamlit.app/
 
-Note: Demo video also available
+Note: Hosted on Streamlit free tier, which sleeps after approximately 12 hours of inactivity, first click may take 20-30s to wake up (not a bug). Demo video also available
 
 
 
