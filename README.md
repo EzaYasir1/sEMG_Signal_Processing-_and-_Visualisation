@@ -45,7 +45,7 @@ whether to trim the first 20 seconds
 intensity over time (rectify, low-pass and Savitzky-Golay smoothing).
 6. Exports the processed signal and envelope for both conditions to CSV.
 7. Displays both conditions in an interactive Streamlit dashboard, with
-a condition selector, channel selector, time-range slider, and basic
+a condition selector, channel selector, time-range slider used to observe signal in detail, and basic
 signal metrics like RMS, median frequency, spectral entropy, skewness,
 kurtosis.
 
