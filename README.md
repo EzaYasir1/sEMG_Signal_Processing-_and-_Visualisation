@@ -228,6 +228,12 @@ Isotonic.
 ## Demo
 
 A walkthrough video of the dashboard, covering both conditions, is
-included in this repository (`demo/dashboard\\\_demo.mp4`, playable
-directly on GitHub).
+included in this repository 
+
+
+
+https://github.com/user-attachments/assets/9a6cef52-de20-4b4e-b9d6-1031b9078ccf
+
+
+
 
